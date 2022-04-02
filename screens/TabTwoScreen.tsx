@@ -1,11 +1,4 @@
-import {
-  StyleSheet,
-  Image,
-  ScrollView,
-  Dimensions,
-  TouchableOpacity,
-  Pressable,
-} from "react-native";
+import { StyleSheet, Image, ScrollView } from "react-native";
 import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
 import { RootTabScreenProps } from "../types";
@@ -18,23 +11,14 @@ export default function TabTwoScreen({
   navigation,
 }: RootTabScreenProps<"TabOne">) {
   const [menus, setMenu]: any = useState([]);
-  const [bevareges, setBevareges]: any = useState([]);
-  const [nameProducts, setProducts]: any = useState([]);
 
   useEffect(() => {
     fetch(myEndPoint)
       .then((resp) => resp.json())
-      .then((data) => setMenu(data.menus));
-
-    menus.filter((e: any) => {
-      let products: any[] = [...e.name];
-      setProducts([products]);
-      if (e.name == "Bevareges") {
-        let beva: any[] = e.items;
-        console.log("Beva", beva);
-        setBevareges(beva);
-      }
-    });
+      .then((data) => setMenu(data.menus))
+      .catch((error) => {
+        console.error("There was an error!", error);
+      });
   }, []);
 
   return (
