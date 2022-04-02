@@ -3,8 +3,13 @@
 # Background
 
 This project has been made in React Native using Expo and Typescript for run the project
+
+## Install app
+
+```
 1- install node_modules with yarn or npm install
 2- run application yarn start
+```
 
 # Technical Approaches
 
