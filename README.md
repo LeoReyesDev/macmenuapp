@@ -20,6 +20,8 @@ Usingg Typesscript its good practice because, we can prevent several errors for 
 ## Consuming rest API based in Javascript
 
 Consuming rest API based in Javascript
+
+```
 usseEffect()
 fetch and Promises
 useEffect(() => {
@@ -30,6 +32,7 @@ fetch(myEndPoint)
 console.error("There was an error!", error);
 });
 }, []);
+```
 
 I created diferent components for consuming this data the modal and menu items has been made
 with rendering and nested components using props for pass and inject data from one component to window modal.
