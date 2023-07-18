@@ -4,6 +4,8 @@
 
 This project has been made in React Native using Expo and Typescript for run the project
 
+![macmenuapp](https://github.com/LeoReyesDev/macmenuapp/assets/19556132/7a613634-a954-495e-8101-fb1d0a11dacf)
+
 ## Install app
 
 ```
